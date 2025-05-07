@@ -91,6 +91,7 @@ The most critical learning from this prototype phase was understanding the impac
 | SRS-06 | Sensor shall give a resistance value which can later be converted to gas part per million using a relation between Ideal resistance and observed resistance.  | Satisfied |
 
 #### Display 
+
 | **SRS ID** | **Requirement** |  **Status** |
 | --- | --- | --- |
 | SRS-07 | The system shall display on the LCD, the CO levels in the units of parts per million and the room status based on the level of toxicity. | Satisfied |
@@ -102,6 +103,7 @@ The most critical learning from this prototype phase was understanding the impac
 | SRS-13 | The LCD display shall be refreshed every 3 seconds with new CO readings Observed from the sensor.  | Satisfied |
 
 ### Operations
+
 | **SRS ID** | **Requirement** |  **Status** |
 | --- | --- | --- |
 | SRS-14 | The system shall have different modes of operations based on the toxicity level that are classified based on the CO detected ppm. | Satisfied |
@@ -111,6 +113,7 @@ The most critical learning from this prototype phase was understanding the impac
 
 
 ### Indicators 
+
 | **SRS ID** | **Requirement** |  **Status** |
 | --- | --- | --- |
 | SRS-18 | The buzzer shall go off when the toxicity level 2 is detected. | Satisfied |
