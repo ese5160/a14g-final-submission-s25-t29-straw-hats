@@ -11,7 +11,7 @@
 
 <a href="(https://drive.google.com/drive/folders/17WcglImkKmd4xaHWco-ZTRyiMJsDFJ4c?usp=sharing)">Project Demonstration</a>
 
-[![Watch the video](https://img.youtube.com/vi/17WcglImkKmd4xaHWco-ZTRyiMJsDFJ4c/0.jpg)](https://drive.google.com/uc?export=download&id=17WcglImkKmd4xaHWco-ZTRyiMJsDFJ4c)
+[![Watch the video]("Images\CO.jpg")](https://drive.google.com/drive/folders/17WcglImkKmd4xaHWco-ZTRyiMJsDFJ4c?usp=sharing)
 
 ## 2. Project Summary
 
