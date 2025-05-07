@@ -11,7 +11,7 @@
 
 <a href="(https://drive.google.com/drive/folders/17WcglImkKmd4xaHWco-ZTRyiMJsDFJ4c?usp=sharing)">Project Demonstration</a>
 
-[![Watch the video](Images\CO.jpg)](https://drive.google.com/drive/folders/17WcglImkKmd4xaHWco-ZTRyiMJsDFJ4c?usp=sharing)
+[![Watch the video](https://github.com/ese5160/a14g-final-submission-s25-t29-straw-hats/blob/main/Images/CO.jpg?raw=true)](https://drive.google.com/drive/folders/17WcglImkKmd4xaHWco-ZTRyiMJsDFJ4c?usp=sharing)
 
 ## 2. Project Summary
 
