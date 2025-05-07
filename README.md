@@ -4,14 +4,14 @@
     * Team Number: 29
     * Team Name: Strawhats
     * Team Members: Sidddharth Ramanathan and Komalika Gaikwad
-    * Github Repository URL: 
+    * Github Repository URL: https://github.com/ese5160/a14g-final-submission-s25-t29-straw-hats.git
     * Description of test hardware: acbook Air M1, Dell G15, Windows, SAMW25, SD Card Module, Micss 5524 sensor, 
 
 ## 1. Video Presentation
 
 <a href="(https://drive.google.com/drive/folders/17WcglImkKmd4xaHWco-ZTRyiMJsDFJ4c?usp=sharing)">Project Demonstration</a>
 
-<iframe id=”player” type=”text/html” width=”640″ height=”390″ src=”https://drive.google.com/drive/folders/17WcglImkKmd4xaHWco-ZTRyiMJsDFJ4c?usp=sharing” frameborder=”0″></iframe>
+[![Watch the video](https://img.youtube.com/vi/17WcglImkKmd4xaHWco-ZTRyiMJsDFJ4c/0.jpg)](https://drive.google.com/uc?export=download&id=17WcglImkKmd4xaHWco-ZTRyiMJsDFJ4c)
 
 ## 2. Project Summary
 
