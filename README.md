@@ -126,7 +126,7 @@ The most critical learning from this prototype phase was understanding the impac
 | --- | --- |--- |
 | SRS-20 | The system shall support communication between the MCU and a web interface via WiFi.  | Satisfied |
 | SRS-21 | The web interface shall display the CO levels in the units of parts per million and the room status based on the level of toxicity | Partially Satisfied as we have the node red display established to work how we intended when we recieve the MQTT values |
-| SRS-22 | The Display text on the Node red shall include data from all the three units that is transfered over the MQTT protocol. | Unsatisfied - Although we were able to get the wifi handler updates, We were not able to able to Update new readings via MQTT | Unsatisfied |
+| SRS-22 | The Display text on the Node red shall include data from all the three units that is transfered over the MQTT protocol. | Unsatisfied - Although we were able to get the wifi handler updates, We were not able to able to Update new readings via MQTT |
 | SRS-23 | The display on the Node red shall Display the level of CO detected on the dashboard and another dashboard that logs in the time when toxic level 2 was detected on the system along with the Past measured readings | Satisfied |
 | SRS-24 | The display on the Node red shall refresh every second after we get the input reading.  | Satisfied |
 
