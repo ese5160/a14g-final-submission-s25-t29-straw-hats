@@ -1,4 +1,4 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/AlBFWSQg)
+
 # a14g-final-submission
 
     * Team Number: 29
@@ -13,6 +13,11 @@
 
 
 ## 2. Project Summary
+
+<div align=center>
+<img src="Images\CO.jpg" width="600">  
+</div>
+
 
 ### Device Description
 CO Away! - Toxic gas Detector and Filtering system
