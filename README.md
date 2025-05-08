@@ -1,6 +1,4 @@
 
-# a14g-final-submission
-
     * Team Number: 29
     * Team Name: Strawhats
     * Team Members: Sidddharth Ramanathan and Komalika Gaikwad
