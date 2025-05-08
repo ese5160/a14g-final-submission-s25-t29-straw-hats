@@ -9,33 +9,36 @@
 
 ## 1. Video Presentation
 
-<a href="(https://drive.google.com/drive/folders/17WcglImkKmd4xaHWco-ZTRyiMJsDFJ4c?usp=sharing)">Project Demonstration</a>
+**Click on the image below**
 
 [![Watch the video](https://github.com/ese5160/a14g-final-submission-s25-t29-straw-hats/blob/main/Images/CO.jpg?raw=true)](https://drive.google.com/drive/folders/17WcglImkKmd4xaHWco-ZTRyiMJsDFJ4c?usp=sharing)
 
 ## 2. Project Summary
 
-<div align=center>
-<img src="Images\CO.jpg" width="600">  
-</div>
-
-
 ### Device Description
 CO Away! - Toxic gas Detector and Filtering system
 
-CO Away is designed to enhance indoor safety by detecting and mitigating carbon monoxide (CO) presence in apartment units. Inhaling CO is hazardous, often leading to severe health risks. Unlike conventional CO detectors that simply trigger an alarm when CO is detected, CO GO takes a proactive approach by removing and filtering the harmful gas as soon as Even a small amount of increase is observed. If and only if there is an continuious increase in the level of CO in a unit will the, Alarms and LED lights go off waking up the residents of the unit. 
-CO GO can be installed in individual apartment units to monitor and address CO accumulation. Each device uses a MiCS-5524 MEMS sensor for detecting indoor carbon monoxide and natural gas leaks. Upon detecting hazardous CO levels, the system:
+CO Away is designed to enhance indoor safety by detecting and mitigating carbon monoxide (CO) presence in apartment units. Inhaling CO is hazardous, often leading to severe health risks. Unlike conventional CO detectors that simply trigger an alarm when CO is detected, CO GO takes a proactive approach by removing and filtering the harmful gas as soon as a small amount of increase is observed. If and only if there is a continuious increase in the level of CO in a unit will the Alarms and LED lights go off, waking up the residents of the unit. 
+
+During cold winters, prolonged use of heaters and poor ventilation can lead to CO buildup, posing respiratory and health risks to residents. CO GO ensures rapid detection and removal of the gas, maintaining indoor air quality and safety, Sometimes without even disturbing the residents. People with different health conditions have different limits of CO they can tolerate, CO Go helps us change the alarm limits based on the specific needs of the residents. 
+
+CO GO can be installed in individual apartments, closed public spaces and also as an add on to HVAC systems to monitor and address CO accumulation. Each device uses a MiCS-5524 MEMS sensor for detecting indoor carbon monoxide and natural gas leaks. Upon detecting hazardous CO levels, the system:
 * Activates an exhaust system to remove CO from the space.
 * Filters the expelled gas through a filter, ensuring clean air circulation.
 * Triggers an alarm system with an audible buzzer and LED lights for immediate notification once the CO levels are over a certain PPM.
 * Sends real-time alerts via a Wi-Fi-enabled SAMW25 microcontroller to building managers and residents, detailing the specific unit affected and the duration of the event.
 
 ### Device Functionality:
-During cold winters, prolonged use of heaters and poor ventilation can lead to CO buildup, posing respiratory and health risks to residents. CO GO ensures rapid detection and removal of the gas, maintaining indoor air quality and safety, Sometimes without even disturbing the residents. People with different health conditions have different limits of CO they can tolerate, CO Go helps us change the alarm limits based on the specific needs of the residents. 
+The MiCS-5524 sensor constantly monitors the CO gas level and reports to the decision making stack of the project, which controls what actuators need to be triggered. There are three modes in this decision making stack:
+- Safe mode: When the detected ppm < 10, the environment is considered safe. The green status LED will turn ON and the OLED display will display the ppm value and a "safe" message.
+- Detection mode: When the detected ppm is between 10 and 20, there is a mild threat in the environment. The red status LED will turn ON, the exhaust fan turns ON with 50% speed and the OLED display will display the ppm value and a "Mild threat" message.
+- Danger mode: When the detected ppm > 20, there is a critical threat in the environment. The red status LED and the buzzer will turn ON, the exhaust fan turns ON with 100% speed and the OLED display will display the ppm value and a "Critical threat, evacuate" message.
 
-### Implementation:
-For this project, three prototype units will be developed, each with its own CO GO kit connected to separate exhaust and filtration systems. The devices will communicate via I2C to the SAMD21 microcontroller and integrate with Node-RED, allowing comprehensive monitoring of all units, including timestamps for each incident.
-By addressing both detection and mitigation, CO GO offers a robust solution for CO safety in residential apartments, promoting health and peace of mind for occupant based on their needs and health conditions. 
+Along with the product level changes, the CO gas values will be updated on the node-red dashboard, and basic statistics of high CO threshold will also be tabulated. From the admin side, we are able to run over the air firmware updates, making the device a true IoT Edge device. The project leverages the synchronization capabilities of FreeRTOS, and has designated tasks for each of these functionalities. Here is a state diagram of the device functionality:
+
+<div align=center>
+<img src="Images\StateDiagram.drawio.png" width="600">  
+</div>
 
 ### Challenges
 Over the course of this project, we faced several technical and logistical challenges that significantly influenced our development timeline and outcomes:
@@ -59,7 +62,7 @@ The most critical learning from this prototype phase was understanding the impac
 
 * HVAC System Integration: A natural next step for this project is to scale the system to interface with HVAC systems in commercial buildings, where centralized CO monitoring and control could improve occupant safety and energy efficiency.
 
-* MQTT Communication Debugging: Currently, MQTT protocol communication between the device and Node-RED remains unreliable. Further investigation into task prioritization, broker connectivity, and buffer handling within the FreeRTOS environment is necessary.
+* MQTT Communication Debugging: Currently, MQTT protocol communication between the device and Node-RED remains unreliable, only basic mqtt publish functions work. Further investigation into task prioritization, broker connectivity, and buffer handling within the FreeRTOS environment is necessary.
 
 * Sensor Upgrade: Replacing the MiCS-5524 with a more reliable CO sensor—with higher accuracy, better linearity, and a comprehensive datasheet—would enhance the robustness of the system.
 
@@ -209,7 +212,7 @@ Out of the three PCBs we recieved,
 
 ## Codebase
 
-- <a href="(https://github.com/ese5160/final-project-t29-straw-hats.git)">GitHub_Codebase</a>
-- <a href="(http://172.172.174.245:1880/ui/#!/0?socketid=MjuhaxfJVJHE7yXFAAE1)">NodeRed</a>
+- <a href="https://github.com/ese5160/final-project-t29-straw-hats.git">GitHub_Codebase</a>
+- <a href="http://172.172.174.245:1880/ui/#!/0?socketid=MjuhaxfJVJHE7yXFAAE1">NodeRed</a>
 
 
